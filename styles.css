@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply w-full h-full font-display;
+  }
+  body {
+    @apply antialiased bg-gray-200 text-gray-900 flex justify-center items-center;
+  }
+  ::selection {
+    @apply bg-red-500 text-white;
+  }
+}
+
+@layer components {
+  .page {
+    @apply  rounded-md shadow-lg overflow-hidden ;
+    width: 210mm;
+    height: 297mm;
+  }
+}
